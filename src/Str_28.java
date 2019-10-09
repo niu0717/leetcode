@@ -28,6 +28,7 @@ public class Str_28 {
      * @return
      */
     public static int strStr(String haystack, String needle) {
+        if(needle.length()==0)return 0;
         int i = 0;
         int j = 0;
         int[] next = new int[needle.length()+1];
